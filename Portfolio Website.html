@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calm Portfolio</title>
+    <style>
+        :root {
+            --cafe-brown: #6F4E37;
+            --beige: #F5F5DC;
+            --white: #FFFFFF;
+            --light-gray: #E0E0E0;
+            --text-color: #4A4A4A;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--beige);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--white);
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 2px solid var(--light-gray);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--cafe-brown);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            color: #A67B5B;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--cafe-brown);
+            border-bottom: 1px solid var(--light-gray);
+            padding-bottom: 10px;
+        }
+
+        .editable-area {
+            padding: 10px;
+            border: 1px dashed transparent;
+            transition: border 0.3s;
+        }
+
+        .editable-area:hover {
+            border: 1px dashed var(--cafe-brown);
+            cursor: text;
+        }
+
+        /* Projects Layout */
+        .project-item {
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .video-placeholder {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background-color: var(--light-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Portfolio - Ismail Khalid</h1>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#other">Other</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="editable-area" contenteditable="false">
+        <p>Creating a business that will result in billions. This is a hard goal to achieve. I am Ismail Khalid, a 9th grader living in the state of California. Goals like mine require immense dedication and hard work. I plan to achieve these goals by taking risks and staying strong. This is my goal as I want to be successful in life, work hard, then enjoy it. I feel that I can achieve these goals with some of my characteristics like persistence, intelligence, and intuition. 
+        </p>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    
+    <div class="project-item">
+        <div class="video-placeholder">
+            <iframe width="100%" height="100%" src="https://drive.google.com/file/d/1C_u9s0uEmhsLrGvKBkNzHjI6wqTN7vzG/view?usp=sharing" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="editable-area" contenteditable="false">
+            <strong>LifeSavers:</strong> December 2025 - Computer Science Essentials:   This project was the semester final for the highschool computer science essentials class. In this app, my group of four created an app on MIT app inventor in which one can access information and steps on what to do in certain emergencies including a fire, an earthquake, a tornado, a hurricane, and an intruder. My group switched between working on different parts of the code, design view, and slideshow throughout day we got to work. All in all, we created a project that required teamwork and cooperation, and inspired determination and constancy. We all had a fun time and it was a great learning experience for all of us.
+        </div>
+    </div>
+
+    <div class="project-item">
+        <div class="video-placeholder">
+            <iframe width="100%" height="100%" src="https://drive.google.com/file/d/1g8LXr8KKRnome1yhWeJtFVM7ijFOY_zq/view?usp=sharing" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="editable-area" contenteditable="false">
+            <strong>Birdy Flap:</strong> October 2025 - Computer Science Essentials:   This project was the final assignment in Unit 1 of the highschool computer science essentials class. In this app, Me an my partner recreated the famous game Flappy Bird and named it Birdy Flap. The object of the game is to score as many points as you can. In the game, one can switch the color of the character to colors like Black, Gray, Purple, Red, and Blue. You can aslo pause and reset the game through a button. Every class period, my partner and I switched frequently between documenting the project and actually coding it. This project required teamwork and caused us to frequently communicate and help each other out. This pair programming method proved to be very effecient as we got done with the project very quickly and learned to communicate more effeciently.
+        </div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="editable-area" contenteditable="false">
+        <p>GitHub Portfolio: https://github.com/Ismail-Khalid-DUSD/MyPortfolioKhalid</p>
+    </div>
+</section>
+
+<section id="other">
+    <h2>Other</h2>
+    <div class="editable-area" contenteditable="false">
+        <p>Hobbies, side quests, or just random thoughts. Use this space for anything that doesn't fit elsewhere.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Crafted with Calm</p>
+</footer>
+
+</body>
+</html>
